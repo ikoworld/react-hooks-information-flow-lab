@@ -12,7 +12,7 @@ test("calls the onCategoryChange callback prop when the <select> is changed", ()
   render(<Filter onCategoryChange={onCategoryChange} />);
 
   fireEvent.change(screen.queryByRole("combobox"), {
-    target: { value: "Dairy" },
+    target: { value: "Diary" },
   });
   expect(onCategoryChange).toHaveBeenCalled();
 });
